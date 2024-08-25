@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "djangocms-form-builder"
+name = "djangocms-form-builder-zite69"
 dynamic = ["version"]
 description = "Adds a form editor to the structure board of django CMS."
 readme = "README.rst"
@@ -52,7 +52,7 @@ reCaptcha = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/fsbraun/djangocms-form-builder"
+Homepage = "https://github.com/zite69/djangocms-form-builder-zite69"
 
 [tool.hatch.version]
 path = "djangocms_form_builder/__init__.py"
@@ -61,3 +61,6 @@ path = "djangocms_form_builder/__init__.py"
 include = [
     "/djangocms_form_builder",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = [ "/djangocms_form_builder" ]
